@@ -5,9 +5,9 @@ describe('CalculatorService', () => {
     expect(CalculatorService.getSquare(0)).toBe(0);
   });
 
-  it('should return given number if 1 passed', () => {
-    expect(CalculatorService.getSquare(1)).toBe(1);
-  });
+  // it('should return given number if 1 passed', () => {
+  //   expect(CalculatorService.getSquare(1)).toBe(1);
+  // });
 
   it('should return number square', () => {
     expect(CalculatorService.getSquare(2)).toBe(4);

@@ -1,4 +1,6 @@
-export type getSquare = (x: number) => number;
+import plusA, { typePlusA } from './plusA';
+
+type getSquare = (x: number) => number;
 
 const getSquare: getSquare = (x) => {
   if (x === 0 || x === 1) {
@@ -7,12 +9,14 @@ const getSquare: getSquare = (x) => {
   return x ** 2;
 };
 
-export interface ICalculatorService {
+interface ICalculatorService {
   getSquare: getSquare;
+  plusA: typePlusA,
 }
 
 const CalculatorService: ICalculatorService = {
   getSquare,
+  plusA,
 };
 
 export default CalculatorService;
